@@ -1,2 +1,31 @@
-# Educational-Task-Management-System
-"An integrated web-based platform designed to digitize the academic assignment lifecycle. The system facilitates a seamless workflow between students and instructors, enabling students to submit their tasks securely and providing instructors with a centralized dashboard for real-time review and evaluation."
+# Educational Task Management System
+
+## وصف المشروع (Project Description)
+نظام تقني متكامل لإدارة التكاليف الأكاديمية (Educational Task Management System). تم تطوير المنصة لرقمنة دورة حياة التكليفات الدراسية، حيث توفر بيئة تفاعلية وسلسة بين الطلاب وأعضاء هيئة التدريس، مما يضمن تنظيم عمليات التسليم والمراجعة والتقييم بشكل رقمي ومنظم.
+
+## المميزات الرئيسية (Key Features)
+* **نظام صلاحيات (Role-Based Access):** واجهات مخصصة لكل من الطلاب والدكاترة لضمان أمن البيانات وفصل الصلاحيات.
+* **نظام رفع آمن (Secure File Upload):** إمكانية رفع التكاليف مع دعم لإضافة ملاحظات توضيحية.
+* **لوحة تحكم الدكاترة (Instructor Dashboard):** عرض تفاعلي لجميع التكاليف المسلمة عبر جداول بيانات مرتبة.
+* **إدارة الملفات (File Management):** تنظيم تلقائي للملفات المرفوعة في المسارات البرمجية الخاصة بالسيرفر.
+
+## التقنيات المستخدمة (Technical Stack)
+* **واجهة المستخدم (Frontend):** HTML5, CSS3, JavaScript.
+* **لغة البرمجة (Backend):** PHP.
+* **إدارة البيانات:** Structured File-based Data Management.
+
+## هيكلية المشروع (Project Structure)
+يوضح المجلد المسارات الأساسية للنظام:
+- `index.html`: الصفحة الرئيسية للمنصة.
+- `upload.html`: واجهة الطالب لرفع التكاليف.
+- `doctor_login.php`: صفحة دخول أعضاء هيئة التدريس.
+- `dashboard.php`: لوحة التحكم الخاصة بالدكتور.
+- `/uploads/`: المجلد المخصص لتخزين الملفات المرفوعة.
+
+## كيفية التشغيل (Installation)
+1. قم بنسخ المشروع إلى مجلد السيرفر المحلي (مثل `htdocs` في XAMPP).
+2. تأكد من إعطاء صلاحيات الكتابة لمجلد `/uploads/`.
+3. افتح الرابط في المتصفح وابدأ باستخدام النظام.
+
+## الترخيص (License)
+هذا المشروع مرخص تحت رخصة **MIT License**.
