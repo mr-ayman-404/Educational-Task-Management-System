@@ -2,7 +2,7 @@
 // بيانات الاتصال الخاصة بحساب أيمن عادل - مشروع Aymantec
 $host   = "sql205.infinityfree.com"; 
 $user   = "if0_41482427"; 
-$pass   = "EnAyman404Pro1"; // تأكد أنها نفس كلمة سر دخولك للموقع
+$pass   ="YOUR_PASSWORD_HERE"; // تأكد أنها نفس كلمة سر دخولك للموقع
 $dbname = "if0_41482427_tasks"; 
 
 // إنشاء الاتصال باستخدام MySQLi
