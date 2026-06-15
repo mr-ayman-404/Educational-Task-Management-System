@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style-home.css?v=2">
+    <link rel="stylesheet" href="header.css"> 
+    <link rel="stylesheet" href="style.css?v=1.1">
+    <title>aymantec - نظام التكاليف</title>
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <main class="content">
+        <div class="login-card">
+            <div class="card-header">
+                <div class="icon-circle">
+                    <i class="fas fa-tasks"></i>
+                </div>
+                <h3>منصة تسليم التكاليف</h3>
+            </div>
+            
+            <div class="form-body">
+                <div class="input-group">
+                    <label><i class="fas fa-graduation-cap"></i> المادة الدراسية</label>
+                    <select id="subject" name="subject" required>
+                        <option value="" disabled selected> اختر مادة واحدة</option>
+                        <option value="هياكل بيانات - عملي">هياكل بيانات - عملي</option>
+                        <option value="هياكل بيانات - نظري">هياكل بيانات - نظري</option>
+                        <option value="تصميم منطقي - عملي">تصميم منطقي - عملي</option>
+                        <option value="تصميم منطقي - نظري">تصميم منطقي - نظري</option>
+                        <option value="برمجة شيئية - عملي">برمجة شيئية - عملي</option>
+                        <option value="برمجة شيئية - نظري">برمجة شيئية - نظري</option>
+                        <option value="رياضيات متقطعة">رياضيات متقطعة</option>
+                        <option value="إنجليزي تقني">إنجليزي تقني</option>
+                        <option value="مقدمة للأمن السيبراني">مقدمة الى الامن السيبراني</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label><i class="fas fa-user-tag"></i> تسجيل الدخول كـ</label>
+                    <select id="user-role" onchange="togglePasswordField()">
+                        <option value="student">طالب</option>
+                        <option value="teacher">مندوب</option>
+                    </select>
+                </div>
+
+               <div id="password-section" class="input-group" style="display: none;">
+    <label><i class="fas fa-key"></i> كلمة السر</label>
+    <input type="password" id="password-input" placeholder="أدخل كلمة السر الخاصة بالمندوب">
+</div>
+
+                <button class="login-btn" id="login-btn" onclick="processLogin()">دخول
+                </button>
+                
+                <p id="message-box" class="message-box"></p>
+            </div>
+        </div>
+    </main>
+
+    <script src="home.js"></script>
+    <script src="header.js"></script>
+</body>
+</html>

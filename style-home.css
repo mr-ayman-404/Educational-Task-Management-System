@@ -1,0 +1,132 @@
+/* style-home.css - النسخة النهائية الموحدة */
+
+/* إعدادات عامة لتوحيد المسافات والخطوط */
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+}
+
+body { 
+    font-family: 'Segoe UI', Tahoma, sans-serif; 
+    background-color: #f8faff; /* خلفية الموقع الفاتحة */
+    direction: rtl; 
+    padding-top: 80px; /* مسافة للهيدر */
+}
+
+/* تنسيق الكرت الأبيض المريح للعين */
+.login-card {
+    max-width: 480px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05); /* ظلال ناعمة */
+    overflow: hidden;
+}
+
+/* رأس الكرت بخلفية خضراء باهتة */
+.card-header { 
+    background: #f1f8f5; 
+    padding: 30px; 
+    text-align: center; 
+}
+
+/* الدائرة التي تحتوي على الأيقونة الخضراء */
+.icon-circle { 
+    width: 60px; height: 60px; 
+    background: #048853; /* الأخضر الهادئ */
+    color: white; border-radius: 50%; 
+    display: flex; align-items: center; justify-content: center; 
+    margin: 0 auto 15px; font-size: 24px; 
+}
+
+.form-body { padding: 35px; }
+
+/* تنسيق حقول الإدخال */
+.input-group { margin-bottom: 25px; text-align: right; }
+.input-group label { 
+    display: block; 
+    margin-bottom: 10px; 
+    font-weight: 600; 
+    color: #333; 
+    font-size: 14px; 
+}
+
+/* لون الأيقونات الخضراء بجانب النص */
+.input-group label i { color: #048853; margin-left: 5px; }
+
+select, input { 
+    width: 100%; 
+    padding: 14px; 
+    border: 2px solid #eef0f7; /* حدود باهتة */
+    border-radius: 12px; 
+    font-size: 15px; 
+    outline: none; 
+    transition: 0.3s;
+}
+
+/* تأثير التحديد باللون الأخضر */
+select:focus, input:focus { 
+    border-color: #048853; 
+    box-shadow: 0 0 0 4px rgba(4, 136, 83, 0.05);
+}
+
+/* الزر بتصميمه المعتمد */
+.login-btn { 
+    width: 100%; 
+    padding: 16px; 
+    background: #048853; /* الأخضر الأساسي */
+    color: white; 
+    border: none; 
+    border-radius: 12px; 
+    font-size: 16px; 
+    font-weight: bold; 
+    cursor: pointer; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 10px; 
+    transition: 0.3s; 
+}
+
+.login-btn:hover { 
+    background: #037043; /* أخضر أغمق قليلاً عند التمرير */
+    transform: translateY(-1px); 
+}
+
+.message-box {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* --- دعم الجوال (Responsiveness) --- */
+@media (max-width: 500px) {
+    body { padding-top: 60px; }
+    
+    .login-card {
+        max-width: 90%; 
+        border-radius: 15px;
+    }
+
+    .form-body {
+        padding: 20px;
+    }
+
+    .card-header {
+        padding: 20px;
+    }
+    /* حل مشكلة اصطفاف الحقول بشكل عرضي */
+.input-group label, 
+.input-group input, 
+.input-group select {
+    display: block !important; /* يجبر العنصر على أخذ سطر كامل */
+    width: 100% !important;    /* يملأ عرض الكرت بالكامل */
+}
+
+/* لضمان المسافة بين الأيقونة والنص */
+.input-group label i {
+    margin-left: 8px;
+    color: #048853;
+}
+}
